@@ -6,11 +6,11 @@ build:
     python: "3.9"
 
 sphinx:
-  configuration: 2206_OpenFOAM_Training/source/conf.py
+  configuration: source/conf.py
 
 python:
   install:
-    - requirements: 2206_OpenFOAM_Training/source/requirements.txt
+    - requirements: requirements.txt
     - method: pip
       path: .
       extra_requirements:
