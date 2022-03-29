@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2206 OpenFOAM培训大纲 &#8212; OpenFOAM 2206 documentation</title>
+    <title>2206 基于OpenFOAM开源软件的CFD入门课 &#8212; OpenFOAM 2206 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/pd.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -15,7 +15,6 @@
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="使用" href="usage.html" />
     <script type="text/javascript" src="_static/pd.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -36,40 +35,196 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-<a class="reference internal image-reference" href="_images/output.png"><img alt="_images/output.png" src="_images/output.png" style="width: 1760px;" /></a>
-<div class="section" id="openfoam">
-<h1>2206 OpenFOAM培训大纲<a class="headerlink" href="#openfoam" title="Permalink to this headline">¶</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>大纲以及相关内容还在修改过程中</p>
 </div>
-<p>进一步阅读清参考<a class="reference internal" href="usage.html"><span class="doc">使用</span></a>
-可以参考指令<a class="reference internal" href="usage.html#id2"><span class="std std-ref">安装</span></a></p>
-<p>那应该也可以参考第一级目录<a class="reference internal" href="usage.html#id1"><span class="std std-ref">使用</span></a></p>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Linux:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">使用</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#id2">安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#id3">一个小例子</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#id4">拉普拉斯公式</a></li>
+<div class="section" id="openfoamcfd">
+<h1>2206 基于OpenFOAM开源软件的CFD入门课<a class="headerlink" href="#openfoamcfd" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>课程引言<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>使用计算流体力学(CFD)理论，结合现代计算机硬件以及编程语言(C++，Fortran)，对普遍存在的流动、传热等自然现象进行数值模拟，已成显学。因此许多同学也想较好的掌握CFD理论，更好的服务科研生产工作。但是由于CFD理论难度较大，使用商业软件很难理解其中真谛，并且商业软件版权费用昂贵一般个人用户难以承受，直到OpenFOAM软件出现。OpenFOAM是上世纪英国帝国理工学院在Linux平台使用现代C++语言开发，并于新千年开源，时至今日已衍生出诸多版本。因此种种，使用者只有具备良好的理论功底，了解Linux操作系统，掌握基础C++语法，才有可能通过OpenFOAM解决实际问题。通过自学，学习曲线较为陡峭，时间成本较大，容易导致从入门到放弃。本收费课程目的就是希望通过十周时间解决入门难的问题</td></p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/tutorial.html">我很喜欢CFD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/tutorial.html#看下这里">看下这里</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/wangyang.html">我是一个好人</a></li>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h2>课程想法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>教学教学，一起努力。</p></li>
+<li><p>水平一般，还请海涵。</p></li>
+<li><p>战战兢兢，如履薄冰。</p></li>
+<li><p>课程结束，年内开源。</p></li>
+<li><p>同行监督，加油加油。</p></li>
 </ul>
 </div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">OpenFOAM:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">使用</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#id2">安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#id3">一个小例子</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#id4">拉普拉斯公式</a></li>
+<div class="section" id="id3">
+<h2>致谢<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>谢谢那些文献上的大神们(你们是天上的星星)，</p></li>
+<li><p>谢谢我的老师、朋友和同学们(名字太多)，</p></li>
+<li><p>谢谢我的妻子、儿子和女儿，</p></li>
+<li><p>谢谢参与培训的你们，感谢你们的信任，我们一起努力走完这十周，无论结局如何，我选择希望！</p></li>
 </ul>
-</li>
-</ul>
+</div>
+<div class="section" id="id4">
+<h2>课程起始时间<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>2022年6月20日</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>课程周期<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>十周</p>
+</div>
+<div class="section" id="id6">
+<h3>课程安排<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>日期</p></th>
+<th class="head"><p>时间</p></th>
+<th class="head"><p>备注</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>周一</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">19:00-21:00</span></code></p></td>
+<td><p>授课</p></td>
+</tr>
+<tr class="row-odd"><td><p>周三</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">19:00-21:00</span></code></p></td>
+<td><p>授课</p></td>
+</tr>
+<tr class="row-even"><td><p>周五</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">19:00-21:00</span></code></p></td>
+<td><p>授课</p></td>
+</tr>
+<tr class="row-odd"><td><p>周日</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">19:00-21:00</span></code></p></td>
+<td><p><strong>答疑</strong></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<ol class="arabic simple">
+<li><p>请海外同学注意，为北京时间。</p></li>
+<li><p>为了高效沟通，后续会建立交流群。</p></li>
+<li><p>老师水平有限，只能尽力解惑。</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>课程教学大纲<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+</div>
+<div class="section" id="linux">
+<h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<div class="section" id="id8">
+<h3>Linux操作系统安装<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Ubuntu 20.04 LST
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Linux文件系统<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">.</span>
+<span class="go">├── bin -&gt; usr/bin</span>
+<span class="go">├── boot</span>
+<span class="go">├── cdrom</span>
+<span class="go">├── dev</span>
+<span class="go">├── etc</span>
+<span class="go">├── home</span>
+<span class="go">├── lib -&gt; usr/lib</span>
+<span class="go">├── lib32 -&gt; usr/lib32</span>
+<span class="go">├── lib64 -&gt; usr/lib64</span>
+<span class="go">├── libx32 -&gt; usr/libx32</span>
+<span class="go">├── lost+found</span>
+<span class="go">├── media</span>
+<span class="go">├── mnt</span>
+<span class="go">├── opt</span>
+<span class="go">├── proc</span>
+<span class="go">├── root</span>
+<span class="go">├── run</span>
+<span class="go">├── sbin -&gt; usr/sbin</span>
+<span class="go">├── snap</span>
+<span class="go">├── srv</span>
+<span class="go">├── swapfile</span>
+<span class="go">├── sys</span>
+<span class="go">├── tmp</span>
+<span class="go">├── usr</span>
+<span class="go">└── var</span>
+
+<span class="go">24 directories, 1 file</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Linux命令行基本命令<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo</span>
+<span class="go">ls</span>
+<span class="go">copy</span>
+<span class="go">move</span>
+<span class="go">touch</span>
+<span class="go">mkdir</span>
+<span class="go">cat</span>
+<span class="go">less</span>
+<span class="go">more</span>
+<span class="go">tail</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>Linux命令行高级命令<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>find
+<span class="gp">$ </span>grep
+<span class="gp">$ </span>sed
+<span class="gp">$ </span>awk
+</pre></div>
+</div>
+</div>
+<div class="section" id="shell">
+<h3>shell脚本语言入门<a class="headerlink" href="#shell" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">1.</span> 顺序
+<span class="k">2.</span> 条件
+<span class="k">3.</span> 循环
+<span class="k">4.</span> 函数
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id12">
+<h2>基于OpenFOAM的CFD入门<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<div class="section" id="id13">
+<h3>引言<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id14">
+<h3>流体力学控制方程与三类边界条件<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id15">
+<h3>有限体积法求解<code class="docutils literal notranslate"><span class="pre">扩散方程</span></code><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id16">
+<h3>有限体积法求解<code class="docutils literal notranslate"><span class="pre">对流-扩散</span></code>方程<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="simple">
+<h3>有限体积法求解<code class="docutils literal notranslate"><span class="pre">定常流动-SIMPLE算法</span></code><a class="headerlink" href="#simple" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="piso">
+<h3>有限体积法求解<code class="docutils literal notranslate"><span class="pre">瞬态流动-PISO算法</span></code><a class="headerlink" href="#piso" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id17">
+<h2><a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -81,9 +236,40 @@
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Next topic</h4>
-    <p class="topless"><a href="usage.html"
-                          title="next chapter">使用</a></p>
+    <h3><a href="#">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">2206 基于OpenFOAM开源软件的CFD入门课</a><ul>
+<li><a class="reference internal" href="#id1">课程引言</a></li>
+<li><a class="reference internal" href="#id2">课程想法</a></li>
+<li><a class="reference internal" href="#id3">致谢</a></li>
+<li><a class="reference internal" href="#id4">课程起始时间</a></li>
+<li><a class="reference internal" href="#id5">课程周期</a><ul>
+<li><a class="reference internal" href="#id6">课程安排</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id7">课程教学大纲</a></li>
+<li><a class="reference internal" href="#linux">Linux</a><ul>
+<li><a class="reference internal" href="#id8">Linux操作系统安装</a></li>
+<li><a class="reference internal" href="#id9">Linux文件系统</a></li>
+<li><a class="reference internal" href="#id10">Linux命令行基本命令</a></li>
+<li><a class="reference internal" href="#id11">Linux命令行高级命令</a></li>
+<li><a class="reference internal" href="#shell">shell脚本语言入门</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id12">基于OpenFOAM的CFD入门</a><ul>
+<li><a class="reference internal" href="#id13">引言</a></li>
+<li><a class="reference internal" href="#id14">流体力学控制方程与三类边界条件</a></li>
+<li><a class="reference internal" href="#id15">有限体积法求解<code class="docutils literal notranslate"><span class="pre">扩散方程</span></code></a></li>
+<li><a class="reference internal" href="#id16">有限体积法求解<code class="docutils literal notranslate"><span class="pre">对流-扩散</span></code>方程</a></li>
+<li><a class="reference internal" href="#simple">有限体积法求解<code class="docutils literal notranslate"><span class="pre">定常流动-SIMPLE算法</span></code></a></li>
+<li><a class="reference internal" href="#piso">有限体积法求解<code class="docutils literal notranslate"><span class="pre">瞬态流动-PISO算法</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id17"></a></li>
+</ul>
+</li>
+</ul>
+
   </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
