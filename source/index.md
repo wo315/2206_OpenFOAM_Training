@@ -86,7 +86,7 @@
 -----------------
 ### Linux操作系统安装
 ```markdown
-Ubuntu 20.04 LST
+Ubuntu 20.04 LTS
 ```
 ### Linux文件系统
 ```console
