@@ -77,11 +77,11 @@
 
 每个单元课程都是尽可能按照这四项思路来设计，单元之间有前后递进关系
 
-```{admonition} Here's my title
-:class: warning
+%```{admonition} Here's my title
+%:class: warning
 
-Here's my admonition content
-```
+%Here's my admonition content
+%```
 
 ```{attention}
 1. 课程几乎不涉及可压流动，可压缩流动与不可压缩流动的差别巨大，授课体系、求解方法也非常巨大。所以可压缩流动就是停留在名词阶段。

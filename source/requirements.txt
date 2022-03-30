@@ -1,3 +1,4 @@
 sphinx_theme_pd
 nbsphinx
 myst-parser
+sphinxcontrib.bibtex
