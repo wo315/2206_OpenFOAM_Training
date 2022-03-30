@@ -75,7 +75,13 @@
 3. 矩阵求解，介绍直接法，讲解共轭梯度和多重网格。
 4. 后处理，以python和paraview为主。
 
-每个单元课程都是尽可能按照这四项思路来设计，并有前后递进关系
+每个单元课程都是尽可能按照这四项思路来设计，单元之间有前后递进关系
+
+```{admonition} Here's my title
+:class: warning
+
+Here's my admonition content
+```
 
 ```{attention}
 1. 课程几乎不涉及可压流动，可压缩流动与不可压缩流动的差别巨大，授课体系、求解方法也非常巨大。所以可压缩流动就是停留在名词阶段。
@@ -85,25 +91,6 @@
 
 ## 课程教学大纲
 -----------------------
-
-%进一步阅读清参考{doc}`usage`
-%可以参考指令{ref}`安装`
-
-%那应该也可以参考第一级目录{ref}`使用`
-%```{toctree}
-%:caption: 'Linux:'
-%:maxdepth: 2
-
-%usage
-%notebooks/tutorial.ipynb
-%notebooks/wangyang.md
-%```
-%```{toctree}
-%:caption: 'OpenFOAM:'
-%:maxdepth: 2
-
-%usage
-%```
 
 ### 第一部分 Linux
 -----------------
@@ -145,16 +132,16 @@ Ubuntu 20.04 LTS
 ```
 #### Linux命令行基本命令
 ```console
-sudo
-ls
-copy
-move
-touch
-mkdir
-cat
-less
-more
-tail
+$ sudo
+$ ls
+$ copy
+$ move
+$ touch
+$ mkdir
+$ cat
+$ less
+$ more
+$ tail
 ```
 #### Linux命令行高级命令
 ```console
@@ -186,18 +173,16 @@ $ awk
 #### 6 有限体积法求解, 瞬态流动-PISO算法
 -------------------------------
 
-## 课程参考
-1. Jasak博士论文
-2. Moukalled etc. The finite volume method in CFD
-3. Versteeg. An introduction to CFD, the FVM, second edition
-4. ESI版本
-5. Foundation版本
-6. WolfDynamics
-7. Tobis
-8. Fluid Mechanics 101
-9. CFD-online
+## 课程参考文献
 
-```{error}
+
+```{bibliography} 
+---
+all:
+---
+```
+
+```{attention}
 格式
 ```
 

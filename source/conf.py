@@ -36,9 +36,15 @@ extensions = [
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
     "nbsphinx", # MyST-NB
+    'sphinxcontrib.bibtex',
     # "sphinx.ext.autoapi",
     "sphinx.ext.autosummary",
 ]
+
+
+bibtex_bibfiles = ['refs.bib']
+bibtex_default_style = 'unsrt'
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
