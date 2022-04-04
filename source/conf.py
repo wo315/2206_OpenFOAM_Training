@@ -41,6 +41,8 @@ extensions = [
     "sphinx.ext.autosummary",
 ]
 
+myst_enable_extensions = ["colon_fence", "deflist", "tasklist", "fieldlist",
+                          "amsmath", "smartquotes", "replacements"]
 
 bibtex_bibfiles = ['refs.bib']
 bibtex_default_style = 'unsrt'
